@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Temperature Convertor</title>
+    </head>
+    <body>
+        <!-- 인풋 - 타입에서 텍스트로 지정을 하면 어떤 문자든 다 입력이 가능해진다. 하지만 이러면 정확성이 떨어지게 되어 숫자만 입력하려 할때 number로 타입을 지정해 주면 된다. 이때, 기본 텍스트로 지정된 타입은 박스가 긴 반면에 넘버로 지정된 타입은 상자가 짧아지는 것을 확인할 수 있다. 이때, 최소와 최대값도 정할 수 있게 된다. value값을 지정해 주면 placeholder와 같은 효과를 볼 수 있다. 수업에서는 id를 지정하고 이름을 정하는 것을 중요시 하였다. 점수에 반영되니 꼭 확인하자. 인풋 태그를 하고 나면 레이블 태그를 위에 두는데 이때 for에 인풋 id를 넣어줘야한다. 그래야 서로 연관이 되어있다고 속성값을 연결해 주는 것이다. checkbox 타입에서는 checked="checked"를 주면 체크된 것이 디폴트가 되어 새로 고침을 하면 디폴트 값으로 다시 되돌아 가게된다. 인풋으로 버튼도 만들 수 있는데 이때 value값이 버튼 안의 내용이 된다.인풋들은 폼으로 감싸주기!!-->
+        <form>
+            <label for="numTemp">Enter a Temperature: </label>
+            <input type="number" min="-100" max="100" id="numTemp" value="0" />
+            <label for="">To Celcius?</label>
+            <input type="checkbox" id="chkCelcius" checked />
+            <input type="button" value="Convert" id="btnConvert" />
+            <input type="reset" value="Clear" />
+        </form>
+
+        <!-- label : Screen reader users (will read out loud the label, when the user is focused on the element)
+
+        label : Users who have difficulty clicking on very small regions (such as checkboxes) - because when a user clicks the text within the <label> element, it toggles the input (this increases the hit area).  -->
+        <!-- W3School에서 label과 Radio태그 확인해보기. 특히 radio태그에서 name속성과 value속성의 특징을 잘 보고 기억해 두기. -->
+    </body>
+</html>
